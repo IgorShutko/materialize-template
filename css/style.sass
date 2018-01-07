@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500&subset=cyrillic')
+@import "vars"
+@import "base-settings"
+
+// Header
+
+#navbar
+	letter-spacing: 1px
+	text-transform: uppercase
+	padding: 0 4rem
+	background-color: $blue_light
+.main-logo
+	position: absolute
+	top: 0.2rem
+	left: -2.2rem
+
+// About
+
+#about
+	background-color: $about_bg !important
+	padding: 35px 0
+	width: 100wh
+	height: 100vh
+	background-color: $white
+	margin-top: 20px
+.about
+	&__article
+		letter-spacing: 2px
+		text-transform: uppercase
+		font-weight: 500
+	&__text-bq
+		letter-spacing: 1px
+		font-weight: 400
+		font-size: 1.2rem
+.video
+	border: none
+	&-container
+		width: 100%
+		height: 100%
+		margin: 14rem 6rem
+		&-line
+			display: inline-block
+			width: 15.2rem
+			height: 3px
+			background-color: $blue_bg
+			position: absolute
+			top: 15rem
+			margin-left: 20rem
+			&-2
+				display: inline-block
+				width: 15.2rem
+				height: 3px
+				background-color: $blue_bg
+				position: absolute
+				top: 34rem
+				margin-left: 6rem
+#sliders
+	width: 100wh
+	height: 80vh
+	background-color: $about_bg
+	img
+		-webkit-box-shadow: inset 0px 0px 155px 72px rgba(0,0,0,1)
+		-moz-box-shadow: inset 0px 0px 155px 72px rgba(0,0,0,1)
+		box-shadow: inset 0px 0px 155px 72px rgba(0,0,0,1)
+	h3
+		color: $white
+		text-transform: uppercase
+		font-weight: 500
+	h5
+		font-weight: 400
+
+// Map
+#map
+	margin-bottom: 8rem
+	background-color: $about_bg
+	width: 100wh
+	height: 100vh
+	.map
+		&__google-map
+			width: 100%
+			height: 100%
+		&__article
+			letter-spacing: 2px
+			text-transform: uppercase
+			font-weight: 500
+
+#contact
+	width: 100wh
+	height: 100vh
+	.contact__article
+		letter-spacing: 2px
+		text-transform: uppercase
+		font-weight: 500
+
+
+.input-field
+	label 
+		color: $black !important
+
+	input[type=text]:focus + label 
+		color: $blue_accent !important
+
+	input[type=email]:focus + label 
+		color: $blue_accent !important
+
+	input[type=tel]:focus + label 
+		color: $blue_accent !important
+
+	textarea:focus + label 
+		color: $blue_accent !important
+
+	input[type=text]:focus 
+		border-bottom: 1px solid $blue_accent !important
+		box-shadow: 0 1px 0 0 $blue_accent  !important
+
+	input[type=email]:focus 
+		border-bottom: 1px solid $blue_accent !important
+		box-shadow: 0 1px 0 0 $blue_accent  !important
+
+	input[type=tel]:focus 
+		border-bottom: 1px solid $blue_accent !important
+		box-shadow: 0 1px 0 0 $blue_accent  !important
+
+	textarea:focus 
+		border-bottom: 1px solid $blue_accent !important
+		box-shadow: 0 1px 0 0 $blue_accent  !important
+
+	input[type=text].valid 
+		border-bottom: 1px solid $blue_accent !important
+		box-shadow: 0 1px 0 0 $blue_accent  !important
+
+	input[type=text].invalid 
+		border-bottom: 1px solid $blue_accent !important
+		box-shadow: 0 1px 0 0 $blue_accent !important
+
+.prefix.active
+	color: $blue_accent !important
+
+.page-footer
+	background-color: $blue_bg
